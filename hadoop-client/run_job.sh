@@ -125,7 +125,6 @@ $HADOOP_HOME/share/hadoop/yarn/*:$HADOOP_HOME/share/hadoop/yarn/lib/*"
 
 yarn jar "$STREAMING_JAR" \
   -D mapreduce.framework.name=yarn \
-  -D mapreduce.application.classpath="$APP_CLASSPATH" \
   -D yarn.app.mapreduce.am.resource.mb=256 \
   -D yarn.app.mapreduce.am.command-opts=-Xmx192m \
   -D mapreduce.map.memory.mb=256 \
