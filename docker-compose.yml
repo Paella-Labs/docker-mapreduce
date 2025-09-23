@@ -1,5 +1,7 @@
 x-hadoop: &hadoop_env
   YARN_CONF_yarn_app_mapreduce_am_env: "HADOOP_HOME=/opt/hadoop-3.2.1,HADOOP_MAPRED_HOME=/opt/hadoop-3.2.1"
+  MAPRED_CONF_mapreduce_map_env: "HADOOP_HOME=/opt/hadoop-3.2.1,HADOOP_MAPRED_HOME=/opt/hadoop-3.2.1"
+  MAPRED_CONF_mapreduce_reduce_env: "HADOOP_HOME=/opt/hadoop-3.2.1,HADOOP_MAPRED_HOME=/opt/hadoop-3.2.1"
   MAPRED_CONF_mapreduce_application__classpath: "/opt/hadoop-3.2.1/etc/hadoop:/opt/hadoop-3.2.1/share/hadoop/common/*:/opt/hadoop-3.2.1/share/hadoop/common/lib/*:/opt/hadoop-3.2.1/share/hadoop/hdfs/*:/opt/hadoop-3.2.1/share/hadoop/hdfs/lib/*:/opt/hadoop-3.2.1/share/hadoop/mapreduce/*:/opt/hadoop-3.2.1/share/hadoop/mapreduce/lib/*:/opt/hadoop-3.2.1/share/hadoop/yarn/*:/opt/hadoop-3.2.1/share/hadoop/yarn/lib/*"
   YARN_CONF_yarn_application__classpath: "/opt/hadoop-3.2.1/etc/hadoop:/opt/hadoop-3.2.1/share/hadoop/common/*:/opt/hadoop-3.2.1/share/hadoop/common/lib/*:/opt/hadoop-3.2.1/share/hadoop/hdfs/*:/opt/hadoop-3.2.1/share/hadoop/hdfs/lib/*:/opt/hadoop-3.2.1/share/hadoop/mapreduce/*:/opt/hadoop-3.2.1/share/hadoop/mapreduce/lib/*:/opt/hadoop-3.2.1/share/hadoop/yarn/*:/opt/hadoop-3.2.1/share/hadoop/yarn/lib/*"
   YARN_CONF_mapreduce_application__classpath: "/opt/hadoop-3.2.1/etc/hadoop:/opt/hadoop-3.2.1/share/hadoop/common/*:/opt/hadoop-3.2.1/share/hadoop/common/lib/*:/opt/hadoop-3.2.1/share/hadoop/hdfs/*:/opt/hadoop-3.2.1/share/hadoop/hdfs/lib/*:/opt/hadoop-3.2.1/share/hadoop/mapreduce/*:/opt/hadoop-3.2.1/share/hadoop/mapreduce/lib/*:/opt/hadoop-3.2.1/share/hadoop/yarn/*:/opt/hadoop-3.2.1/share/hadoop/yarn/lib/*"
