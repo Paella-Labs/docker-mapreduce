@@ -5,8 +5,8 @@ x-hadoop: &hadoop_env
   MAPRED_CONF_mapreduce_application__classpath: "/opt/hadoop-3.2.1/etc/hadoop:/opt/hadoop-3.2.1/share/hadoop/common/*:/opt/hadoop-3.2.1/share/hadoop/common/lib/*:/opt/hadoop-3.2.1/share/hadoop/hdfs/*:/opt/hadoop-3.2.1/share/hadoop/hdfs/lib/*:/opt/hadoop-3.2.1/share/hadoop/mapreduce/*:/opt/hadoop-3.2.1/share/hadoop/mapreduce/lib/*:/opt/hadoop-3.2.1/share/hadoop/yarn/*:/opt/hadoop-3.2.1/share/hadoop/yarn/lib/*"
   YARN_CONF_yarn_application__classpath: "/opt/hadoop-3.2.1/etc/hadoop:/opt/hadoop-3.2.1/share/hadoop/common/*:/opt/hadoop-3.2.1/share/hadoop/common/lib/*:/opt/hadoop-3.2.1/share/hadoop/hdfs/*:/opt/hadoop-3.2.1/share/hadoop/hdfs/lib/*:/opt/hadoop-3.2.1/share/hadoop/mapreduce/*:/opt/hadoop-3.2.1/share/hadoop/mapreduce/lib/*:/opt/hadoop-3.2.1/share/hadoop/yarn/*:/opt/hadoop-3.2.1/share/hadoop/yarn/lib/*"
   YARN_CONF_mapreduce_application__classpath: "/opt/hadoop-3.2.1/etc/hadoop:/opt/hadoop-3.2.1/share/hadoop/common/*:/opt/hadoop-3.2.1/share/hadoop/common/lib/*:/opt/hadoop-3.2.1/share/hadoop/hdfs/*:/opt/hadoop-3.2.1/share/hadoop/hdfs/lib/*:/opt/hadoop-3.2.1/share/hadoop/mapreduce/*:/opt/hadoop-3.2.1/share/hadoop/mapreduce/lib/*:/opt/hadoop-3.2.1/share/hadoop/yarn/*:/opt/hadoop-3.2.1/share/hadoop/yarn/lib/*"
-  YARN_CONF_yarn_nodemanager_aux__services: "mapreduce_shuffle"
-  YARN_CONF_yarn_nodemanager_aux__services_mapreduce__shuffle__class: "org.apache.hadoop.mapred.ShuffleHandler"
+  YARN_CONF_yarn_nodemanager_aux_services: "mapreduce_shuffle"
+  YARN_CONF_yarn_nodemanager_aux_services_mapreduce_shuffle_class: "org.apache.hadoop.mapred.ShuffleHandler"
 
 
 services:
