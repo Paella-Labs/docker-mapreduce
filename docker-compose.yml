@@ -98,7 +98,9 @@ services:
       - "8088:8088"  # YARN UI
 
   nodemanager:
-    image: bde2020/hadoop-nodemanager:2.0.0-hadoop3.2.1-java8
+    build:
+      context: ./nodemanager
+    image: paella/hadoop-nodemanager:2.0.0-hadoop3.2.1-java8-python
     environment:
       CORE_CONF_fs_defaultFS: ${HDFS_NAMENODE_URI}
       SERVICE_PRECONDITION: "namenode:9870 resourcemanager:8088"
